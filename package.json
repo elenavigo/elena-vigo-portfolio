@@ -1,0 +1,11 @@
+{
+  "name": "elena-vigo-portfolio",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "5.1.1",
+    "aos": "^2.3.4"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.10.3"
+  }
+}

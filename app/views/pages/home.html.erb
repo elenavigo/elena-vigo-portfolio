@@ -1,0 +1,192 @@
+
+<div class="banner-container">
+  <img src='<%= image_path 'banner.jpeg'%>' alt="banner-image" id="banner-image" class="">
+  <div class="banner-info">
+    <h1>ELENA VIGO</h1>
+    <h4>Junior Full-Stack Web Developer</h4>
+  </div>
+</div>
+<section id="about">
+  <h4>ABOUT</h4>
+  <div class="card">
+    <p>
+      Let me introduce myself.<br>
+      I am Elena, I studied "International Business and Marketing" in Barcelona and I have related previous job experience. Finally after doing Le Wagon Bootcamp, I realized that I love the creativity of building a website (specially front-end JavaScript). Also, I am very logic and with a good eye for detail so I like to make my website evolve and improve.<br><br>
+
+      I have no professional experience in web development but I am eager to learn and adapt to new opportunities. I have been working in a project called Vamosbarcelona (see below) in order to improve my skills by making it more user-friendly and responsive.<br><br>
+
+      Why the career change?<br>
+      In my last working experience I got the chance to work closely with software engineers and I got fascinated. I found coding so powerful and I wanted to understand more about it, so I did a Coding Bootcamp.<br><br>
+
+      Curiosities about me<br>
+      One of the best decisions I have taken is to go solo backpacking for 6 months in Southeast Asia. I like to get out of my comfort zone and to challenge myself. I also enjoy meditation, physical exercise and I love music.
+    </p>
+    <%= link_to 'Download resume', asset_path('ElenaVigoResume.pdf'), class: "download-resume", target: "_blank"  %>
+  </div>
+</section>
+<section id="experience">
+  <h4>EXPERIENCE</h4>
+  <div class="card">
+    <div class="project">
+      <div>
+        <div class="project-title" data-aos="zoom-in">
+          <a href="https://www.vamosbarcelona.com" target="_blank">Vamos Barcelona</a>
+        </div>
+        <div data-aos="zoom-in">
+          <p>"Find volunteering experiences locally and apply with a team of friends"</p>
+          <ul>
+            <li>Mobile first website</li>
+            <li>Responsive design through media queries</li>
+            <li>API call for map display + Ruby gem for coordinates</li>
+            <li>Chat messaging between volunteers and NGOs</li>
+            <li>Project started in "Le Wagon", continued working on it and considering now launching MVP.</li>
+            <li>International and remote technical workflow with 2 other team members.</li>
+          </ul>
+        </div>
+        <div class="skills-used" data-aos="fade-right">
+          <div class="skill">HTML</div>
+          <div class="skill">SCSS</div>
+          <div class="skill">Bootstrap</div>
+          <div class="skill">Ruby on Rails</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Webpack</div>
+          <div class="skill">PostgreSQL</div>
+          <div class="skill">Heroku</div>
+          <div class="skill">Cloudinary</div>
+          <div class="skill">Mapbox API</div>
+          <div class="skill">Figma</div>
+        </div>
+      </div>
+      <div class="vamos-pictures" data-aos="fade-up">
+        <img src='<%= image_path 'vamos_project/vamos1.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
+        <img src='<%= image_path 'vamos_project/vamos3.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
+        <img src='<%= image_path 'vamos_project/vamos6.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
+        <img src='<%= image_path 'vamos_project/vamos8.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
+      </div>
+    </div>
+    <div class="project">
+      <div class="project-title" data-aos="zoom-in">
+        <a href="http://get-your-garden.herokuapp.com/" target="_blank">Get Your Garden</a>
+      </div>
+      <div data-aos="zoom-in">
+        <p >"Book gardens around you with friends or family"</p>
+        <ul>
+          <li>Le Wagon project, for practice purposes</li>
+          <li>Desktop MVP website</li>
+          <li>Only available in Sidney for demo purposes</li>
+        </ul>
+      </div>
+        <div class="skills-used" data-aos="fade-right">
+          <div class="skill">HTML</div>
+          <div class="skill">SCSS</div>
+          <div class="skill">Bootstrap</div>
+          <div class="skill">Ruby on Rails</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Webpack</div>
+          <div class="skill">PostgreSQL</div>
+          <div class="skill">Heroku</div>
+          <div class="skill">Cloudinary</div>
+          <div class="skill">Mapbox API</div>
+          <div class="skill">Figma</div>
+        </div>
+      </div>
+      <div class="getyourgarden-pictures">
+        <div class="content-align-left" data-aos="fade-left"><img src='<%= image_path 'getyourgarden_project/garden1.png'%>' alt="get-your-garden" class="getyourgarden-picture"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="skills">
+  <h4>SKILLS</h4>
+  <div class="card">
+    <h6>Colaboration and version control</h6>
+    <div class="skills-group">
+      <div class="skill" data-aos="zoom-in">
+        <img src='<%= image_path 'logos/git.png'%>' alt="git-logo">
+        <p>Git</p>
+      </div>
+      <div class="skill" data-aos="zoom-in">
+        <img src='<%= image_path 'logos/github.jpg'%>' alt="github-logo">
+        <p>GitHub</p>
+      </div>
+    </div>
+    <hr style="width:100px;height:3px;margin:auto;border-width:2px;margin-top:10px;margin-bottom:20px;">
+    <h6>Frontend Development</h6>
+    <div class="skills-group">
+      <div class="skill" data-aos="zoom-in">
+        <img src='<%= image_path 'logos/html.png'%>' alt="html-logo">
+        <p>HTML</p>
+      </div>
+      <div class="skill" data-aos="zoom-in">
+        <img src='<%= image_path 'logos/css.svg'%>' alt="css-logo">
+        <p>CSS</p>
+      </div>
+      <div class="skill" data-aos="zoom-in">
+        <img src='<%= image_path 'logos/javascript.png'%>' alt="javascript-logo">
+        <p>JavaScript</p>
+      </div>
+    </div>
+    <div class="skills-group">
+      <div class="skill" data-aos="zoom-in">
+        <img src='<%= image_path 'logos/bootstrap.jpeg'%>' alt="bootstrap-logo">
+        <p>Bootstrap</p>
+      </div>
+      <div class="skill" data-aos="zoom-in">
+        <img src='<%= image_path 'logos/react.svg'%>' alt="react-logo">
+        <p>React (loading)</p>
+      </div>
+      <div class="skill" data-aos="zoom-in">
+        <img src='<%= image_path 'logos/redux.png'%>' alt="redux-logo">
+        <p>Redux (loading)</p>
+      </div>
+    </div>
+    <hr style="width:100px;height:3px;margin:auto;border-width:2px;margin-top:10px;margin-bottom:20px;">
+    <h6>Backend Development</h6>
+    <div class="skills-group">
+      <div class="skill" data-aos="zoom-in">
+        <img src='<%= image_path 'logos/ruby.png'%>' alt="ruby-logo">
+        <p>Ruby</p>
+      </div>
+      <div class="skill" data-aos="zoom-in">
+        <img src='<%= image_path 'logos/rails.png'%>' alt="rails-logo">
+        <p>Rails</p>
+      </div>
+      <div class="skill" data-aos="zoom-in">
+        <img src='<%= image_path 'logos/postgresql.png'%>' alt="postgresql-logo">
+        <p>PostgreSQL</p>
+      </div>
+    </div>
+    <hr style="width:100px;height:3px;margin:auto;border-width:2px;margin-top:10px;margin-bottom:20px;">
+    <h6>Deployment</h6>
+    <div class="skills-group">
+      <div class="skill" data-aos="zoom-in">
+        <img src='<%= image_path 'logos/heroku.png'%>' alt="heroku-logo">
+        <p>Heroku</p>
+      </div>
+    </div>
+    <hr style="width:100px;height:3px;margin:auto;border-width:2px;margin-top:10px;margin-bottom:20px;">
+    <h6>Design</h6>
+    <div class="skills-group">
+      <div class="skill" data-aos="zoom-in">
+        <img src='<%= image_path 'logos/figma.png'%>' alt="figma-logo">
+        <p>Figma</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <h4>GET IN TOUCH</h4>
+  <div class="card">
+    <div class="contact-options">
+      <div data-aos="fade-left">
+        <a href="mailto:elenavigoolivan@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+      </div>
+      <div data-aos="fade-up">
+        <a href="https://www.linkedin.com/in/evigo/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div data-aos="fade-right">
+        <a href="https://github.com/elenavigo" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</section>

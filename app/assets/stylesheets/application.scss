@@ -1,0 +1,152 @@
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    opacity: 0.8;
+    color: inherit;
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+      opacity: 1;
+    }
+  }
+
+
+.banner-container {
+  position: relative;
+  display: inline-block;
+  .banner-info {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    h1 {
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 500;
+      font-style: italic;
+      font-size: 70px;
+    }
+    h4 {
+      font-weight: 300;
+      letter-spacing: 2px;
+      font-weight: lighter;
+    }
+  }
+  #banner-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: 20% 40%;
+
+  }
+}
+
+.download-resume {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 7px 5px 7px 5px;
+  width: 200px;
+  text-align: center;
+  background-color: gray;
+  color: white;
+  font-weight: normal;
+  margin: auto;
+}
+
+#about, #skills, #experience, #contact {
+  width: 70%;
+  margin: 50px auto;
+  font-weight: lighter;
+  h4 {
+    text-align: center;
+    font-weight: lighter;
+  }
+  .card {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    padding: 40px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+
+#skills {
+  text-align: center;
+  h6 {
+    margin: 20px 0px 20px 0px;
+  }
+  .skills-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 10px;
+    .skill {
+      img {
+        max-height: 70px;
+        margin-bottom: 10px;
+        max-width: 130px;
+      }
+      p {
+        font-size: 14px;
+        color: gray;
+      }
+    }
+  }
+}
+
+#experience {
+  .project-title {
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .skills-used {
+    display: flex;
+    flex-wrap: wrap;
+    .skill {
+      padding: 5px 10px 5px 10px;
+      margin: 5px 10px 5px 0px;
+      font-size: 14px;
+      color: gray;
+      border: 1px solid gray;
+      border-radius: 10px;
+    }
+  }
+  .getyourgarden-picture {
+      width: 600px;
+      text-align: center;
+      display: block;
+      margin: auto;
+  }
+  .vamos-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .vamos-picture {
+      width: 150px;
+      margin-right: 50px;
+      margin-left: 50px;
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+#contact {
+  .contact-options {
+    color: #505050;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/*#505050*/
