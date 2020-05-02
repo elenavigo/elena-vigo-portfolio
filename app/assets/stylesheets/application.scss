@@ -28,10 +28,10 @@ a {
     text-align: center;
     color: white;
     h1 {
-      font-family: 'Roboto Mono', monospace;
+      font-family: 'Proza Libre', sans-serif;
       font-weight: 500;
       font-style: italic;
-      font-size: 70px;
+      font-size: 60px;
     }
     h4 {
       font-weight: 300;
@@ -44,7 +44,8 @@ a {
     height: 450px;
     object-fit: cover;
     object-position: 20% 40%;
-
+    filter: saturate(1.5);
+    -webkit-filter: saturate(1.5);
   }
 }
 
