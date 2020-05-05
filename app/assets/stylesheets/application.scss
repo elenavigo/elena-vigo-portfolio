@@ -21,8 +21,9 @@ a {
   position: relative;
   display: inline-block;
   .banner-info {
-    position: absolute;
-    bottom: 20%;
+    transition: transform 5s ease-in-out;
+    position: fixed;
+    bottom: 300px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -49,16 +50,34 @@ a {
   }
 }
 
+.header-unpin {
+  display: none;
+}
+.header-pin {
+  display: block;
+}
+
 .download-resume {
-  border: 1px solid white;
+  -webkit-box-shadow: 1px 1px 13px -2px rgba(168,165,168,0.58);
+  -moz-box-shadow: 1px 1px 13px -2px rgba(168,165,168,0.58);
+  box-shadow: 1px 1px 13px -2px rgba(168,165,168,0.58);
+  &:hover {
+    -webkit-box-shadow: 1px 1px 14px 2px rgba(168,165,168,0.58);
+    -moz-box-shadow: 1px 1px 14px 2px rgba(168,165,168,0.58);
+    box-shadow: 1px 1px 14px 2px rgba(168,165,168,0.58);
+  }
   border-radius: 20px;
   padding: 7px 5px 7px 5px;
   width: 200px;
   text-align: center;
-  background-color: gray;
-  color: white;
   font-weight: normal;
   margin: auto;
+}
+
+.search-music {
+  input {
+    width: 200px;
+  }
 }
 
 #about, #skills, #experience, #contact {
@@ -68,6 +87,7 @@ a {
   h4 {
     text-align: center;
     font-weight: lighter;
+    position: relative;
   }
   .card {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
@@ -125,7 +145,6 @@ a {
       width: 600px;
       text-align: center;
       display: block;
-      margin: auto;
   }
   .vamos-pictures {
     display: flex;
