@@ -1,7 +1,6 @@
-
 <div class="banner-container">
   <img src='<%= image_path 'banner.jpeg'%>' alt="banner-image" id="banner-image" class="">
-  <div class="banner-info">
+  <div class="banner-info" id="banner-info">
     <h1>ELENA VIGO</h1>
     <h4>Junior Full-Stack Web Developer</h4>
   </div>
@@ -9,14 +8,19 @@
 <section id="about">
   <h4>ABOUT</h4>
   <div class="card">
-    <p>
+    <div class="text-center mb-4 mt-2" data-aos="zoom-in">
+      <img src="<%= image_path 'ElenaVigoAvatar.jpg'%>" alt="Elena Vigo" style="width: 120px; height: 120px; border-radius: 50%;">
+    </div>
+    <p data-aos="zoom-in">
       I am Elena, I studied "International Business and Marketing" in Barcelona and I have experience in Digital Marketing (CRM). While working in my last position, I got to work closely with software engineers and I got fascinated. I found coding so powerful and I wanted to understand more about it, so I did Le Wagon Bootcamp. <br><br>
 
       After the Bootcamp final MVP project, me and my team continued developing the idea, design and development of "Vamos Barcelona". I love the creativity of building a product from scratch and to make it evolve with a good eye for detail. I am specially interested in continue to develop my skills in Front-End JavaScript.<br><br>
 
       I am curious, I like to challenge myself and I spent 6 months solo traveling in Southeast Asia. I also enjoy meditation and I love going to music events.
     </p>
-    <%= link_to 'Download resume', asset_url('ElenaVigoResume.pdf'), class: "download-resume", target: "_blank"  %>
+    <div data-aos="fade-right" class="download-resume">
+      <%= link_to 'Download resume', asset_url('ElenaVigoResume.pdf'), target: "_blank" %>
+    </div>
   </div>
 </section>
 <section id="experience">
@@ -86,7 +90,7 @@
         </div>
       </div>
       <div class="getyourgarden-pictures">
-        <div class="content-align-left" data-aos="fade-left"><img src='<%= image_path 'getyourgarden_project/garden1.png'%>' alt="get-your-garden" class="getyourgarden-picture"></div>
+        <div class="content-align-left" data-aos="fade-up"><img src='<%= image_path 'getyourgarden_project/garden1.png'%>' alt="get-your-garden" class="getyourgarden-picture"></div>
       </div>
     </div>
   </div>

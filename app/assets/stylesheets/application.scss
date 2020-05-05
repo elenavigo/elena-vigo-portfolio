@@ -21,8 +21,10 @@ a {
   position: relative;
   display: inline-block;
   .banner-info {
-    position: absolute;
-    bottom: 20%;
+    position: fixed;
+    // position: absolute;
+    // bottom: 20%;
+    bottom: 300px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -49,6 +51,13 @@ a {
   }
 }
 
+.header-unpin {
+  display: none;
+}
+.header-pin {
+  display: block;
+}
+
 .download-resume {
   border: 1px solid white;
   border-radius: 20px;
@@ -59,6 +68,12 @@ a {
   color: white;
   font-weight: normal;
   margin: auto;
+}
+
+.search-music {
+  input {
+    width: 200px;
+  }
 }
 
 #about, #skills, #experience, #contact {
@@ -125,7 +140,6 @@ a {
       width: 600px;
       text-align: center;
       display: block;
-      margin: auto;
   }
   .vamos-pictures {
     display: flex;
