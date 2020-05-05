@@ -14,11 +14,11 @@
     <p data-aos="zoom-in">
       I am Elena, I studied "International Business and Marketing" in Barcelona and I have experience in Digital Marketing (CRM). While working in my last position, I got to work closely with software engineers and I got fascinated. I found coding so powerful and I wanted to understand more about it, so I did Le Wagon Bootcamp. <br><br>
 
-      After the Bootcamp final MVP project, me and my team continued developing the idea, design and development of "Vamos Barcelona". I love the creativity of building a product from scratch and to make it evolve with a good eye for detail. I am specially interested in continue to develop my skills in Front-End JavaScript.<br><br>
+      After the Bootcamp final MVP project, me and my team continued developing the idea, design and development of "Vamos Barcelona" <a href="#vamos-project-link">(see below)</a>. I love the creativity of building a product from scratch and to make it evolve with a good eye for detail. I am specially interested in continue to develop my skills in Front-End JavaScript.<br><br>
 
       I am curious, I like to challenge myself and I spent 6 months solo traveling in Southeast Asia. I also enjoy meditation and I love going to music events.
     </p>
-    <div data-aos="fade-right" class="download-resume">
+    <div data-aos="zoom-in" class="download-resume">
       <%= link_to 'Download resume', asset_url('ElenaVigoResume.pdf'), target: "_blank" %>
     </div>
   </div>
@@ -26,43 +26,45 @@
 <section id="experience">
   <h4>EXPERIENCE</h4>
   <div class="card">
-    <div class="project">
-      <div>
-        <div class="project-title" data-aos="zoom-in">
-          <a href="https://www.vamosbarcelona.com" target="_blank">Vamos Barcelona</a>
+    <a id="vamos-project-link">
+      <div class="project">
+        <div>
+          <div class="project-title" data-aos="zoom-in">
+            <a href="https://www.vamosbarcelona.com" target="_blank">Vamos Barcelona</a>
+          </div>
+          <div data-aos="zoom-in">
+            <p>"Find volunteering experiences locally and apply with a team of friends"</p>
+            <ul>
+              <li>Mobile first website</li>
+              <li>Responsive design through media queries</li>
+              <li>API call for map display + Ruby gem for coordinates</li>
+              <li>Chat messaging between volunteers and NGOs</li>
+              <li>Project started in "Le Wagon", continued working on it and considering now launching MVP.</li>
+              <li>International and remote technical workflow with 2 other team members.</li>
+            </ul>
+          </div>
+          <div class="skills-used" data-aos="fade-right">
+            <div class="skill">HTML</div>
+            <div class="skill">SCSS</div>
+            <div class="skill">Bootstrap</div>
+            <div class="skill">Ruby on Rails</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Webpack</div>
+            <div class="skill">PostgreSQL</div>
+            <div class="skill">Heroku</div>
+            <div class="skill">Cloudinary</div>
+            <div class="skill">Mapbox API</div>
+            <div class="skill">Figma</div>
+          </div>
         </div>
-        <div data-aos="zoom-in">
-          <p>"Find volunteering experiences locally and apply with a team of friends"</p>
-          <ul>
-            <li>Mobile first website</li>
-            <li>Responsive design through media queries</li>
-            <li>API call for map display + Ruby gem for coordinates</li>
-            <li>Chat messaging between volunteers and NGOs</li>
-            <li>Project started in "Le Wagon", continued working on it and considering now launching MVP.</li>
-            <li>International and remote technical workflow with 2 other team members.</li>
-          </ul>
-        </div>
-        <div class="skills-used" data-aos="fade-right">
-          <div class="skill">HTML</div>
-          <div class="skill">SCSS</div>
-          <div class="skill">Bootstrap</div>
-          <div class="skill">Ruby on Rails</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">Webpack</div>
-          <div class="skill">PostgreSQL</div>
-          <div class="skill">Heroku</div>
-          <div class="skill">Cloudinary</div>
-          <div class="skill">Mapbox API</div>
-          <div class="skill">Figma</div>
+        <div class="vamos-pictures" data-aos="fade-up">
+          <img src='<%= image_path 'vamos_project/vamos1.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
+          <img src='<%= image_path 'vamos_project/vamos3.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
+          <img src='<%= image_path 'vamos_project/vamos6.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
+          <img src='<%= image_path 'vamos_project/vamos8.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
         </div>
       </div>
-      <div class="vamos-pictures" data-aos="fade-up">
-        <img src='<%= image_path 'vamos_project/vamos1.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
-        <img src='<%= image_path 'vamos_project/vamos3.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
-        <img src='<%= image_path 'vamos_project/vamos6.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
-        <img src='<%= image_path 'vamos_project/vamos8.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
-      </div>
-    </div>
+    </a>
     <div class="project">
       <div class="project-title" data-aos="zoom-in">
         <a href="http://get-your-garden.herokuapp.com/" target="_blank">Get Your Garden</a>
