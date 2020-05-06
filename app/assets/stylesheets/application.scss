@@ -190,8 +190,10 @@ a {
       width: 100%;
     }
     .vamos-picture {
+      flex-shrink: 0;
       width: 40% !important;
-      height: auto;
+      // height: auto;
+      // max-height: 50px !important;
     }
   }
 }
