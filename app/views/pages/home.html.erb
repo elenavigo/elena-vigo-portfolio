@@ -7,7 +7,7 @@
 </div>
 <section id="about">
   <h4>ABOUT</h4>
-  <div class="card">
+  <div class="card-item">
     <div class="text-center mb-4 mt-2" data-aos="zoom-in">
       <img src="<%= image_path 'ElenaVigoAvatar.jpg'%>" alt="Elena Vigo" style="width: 120px; height: 120px; border-radius: 50%;">
     </div>
@@ -25,12 +25,14 @@
 </section>
 <section id="experience">
   <h4>EXPERIENCE</h4>
-  <div class="card">
+  <div class="card-item">
     <a id="vamos-project-link">
       <div class="project">
         <div>
           <div class="project-title" data-aos="zoom-in">
-            <a href="https://www.vamosbarcelona.com" target="_blank">Vamos Barcelona</a>
+            <a href="https://www.vamosbarcelona.com" target="_blank">
+              <span class="span-project-title">Vamos Barcelona</span>
+            </a>
           </div>
           <div data-aos="zoom-in">
             <p>"Find volunteering experiences locally and apply with a team of friends"</p>
@@ -67,7 +69,9 @@
     </a>
     <div class="project">
       <div class="project-title" data-aos="zoom-in">
-        <a href="http://get-your-garden.herokuapp.com/" target="_blank">Get Your Garden</a>
+        <a href="http://get-your-garden.herokuapp.com/" target="_blank">
+          <span class="span-project-title">Get Your Garden</span>
+        </a>
       </div>
       <div data-aos="zoom-in">
         <p >"Book gardens around you with friends or family"</p>
@@ -99,8 +103,8 @@
 </section>
 <section id="skills">
   <h4>SKILLS</h4>
-  <div class="card">
-    <h6>Colaboration and version control</h6>
+  <div class="card-item">
+    <h6>Version Control + Colaboration</h6>
     <div class="skills-group">
       <div class="skill" data-aos="zoom-in">
         <img src='<%= image_path 'logos/git.png'%>' alt="git-logo">
@@ -111,8 +115,7 @@
         <p>GitHub</p>
       </div>
     </div>
-    <hr style="width:100px;height:3px;margin:auto;border-width:2px;margin-top:10px;margin-bottom:20px;">
-    <h6>Frontend Development</h6>
+    <h6>Front End Development</h6>
     <div class="skills-group">
       <div class="skill" data-aos="zoom-in">
         <img src='<%= image_path 'logos/html.png'%>' alt="html-logo">
@@ -141,8 +144,7 @@
         <p>Redux (loading)</p>
       </div>
     </div>
-    <hr style="width:100px;height:3px;margin:auto;border-width:2px;margin-top:10px;margin-bottom:20px;">
-    <h6>Backend Development</h6>
+    <h6>Back End Development</h6>
     <div class="skills-group">
       <div class="skill" data-aos="zoom-in">
         <img src='<%= image_path 'logos/ruby.png'%>' alt="ruby-logo">
@@ -157,7 +159,6 @@
         <p>PostgreSQL</p>
       </div>
     </div>
-    <hr style="width:100px;height:3px;margin:auto;border-width:2px;margin-top:10px;margin-bottom:20px;">
     <h6>Deployment</h6>
     <div class="skills-group">
       <div class="skill" data-aos="zoom-in">
@@ -165,7 +166,6 @@
         <p>Heroku</p>
       </div>
     </div>
-    <hr style="width:100px;height:3px;margin:auto;border-width:2px;margin-top:10px;margin-bottom:20px;">
     <h6>Design</h6>
     <div class="skills-group">
       <div class="skill" data-aos="zoom-in">
@@ -177,7 +177,7 @@
 </section>
 <section id="contact">
   <h4>GET IN TOUCH</h4>
-  <div class="card">
+  <div class="card-item">
     <div class="contact-options">
       <div data-aos="fade-left">
         <a href="mailto:elenavigoolivan@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
@@ -191,3 +191,8 @@
     </div>
   </div>
 </section>
+<div class="scroll-top-container">
+  <div id="scroll-top">
+    <p>Go back to top</p>
+  </div>
+</div>
