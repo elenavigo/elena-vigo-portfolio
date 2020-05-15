@@ -19,9 +19,11 @@ const scrolling = () => {
     ticking = true;
   };
   const update = () => {
-    if (currentScrollY < lastKnownScrollY) {
+    if (window.scrollY == 0) {
+      console.log('pinninggg');
       pin();
-    } else if (currentScrollY > lastKnownScrollY) {
+    } else if (window.scrollY !== 0) {
+      console.log('unpinnnig');
       unpin();
     }
     lastKnownScrollY = currentScrollY;
