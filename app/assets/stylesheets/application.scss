@@ -21,10 +21,13 @@ a {
   position: relative;
   display: inline-block;
   .banner-info {
-    transition: transform 5s ease-in-out;
-    position: fixed;
-    bottom: 300px;
+    position: absolute;
+    bottom: 100px;
     left: 50%;
+    // transition: transform 5s ease-in-out;
+    // position: fixed;
+    // bottom: 300px;
+    // left: 50%;
     transform: translateX(-50%);
     text-align: center;
     color: white;
@@ -50,11 +53,14 @@ a {
   }
 }
 
-.header-unpin {
-  display: none;
-}
 .header-pin {
-  display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.header-unpin {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
 }
 
 .download-resume {
@@ -144,6 +150,32 @@ a {
       filter: brightness(75%);
     }
   }
+  .project-links {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px 20px 0px;
+    .project-link {
+      margin: 10px 0px;
+      border-radius: 5px;
+      padding: 5px;
+      margin-left: 5px;
+      background-color: #ee6c4d;
+      color: white;
+      width: 150px;
+      -webkit-box-shadow: 1px 1px 13px -2px rgba(168,165,168,0.58);
+      -moz-box-shadow: 1px 1px 13px -2px rgba(168,165,168,0.58);
+      box-shadow: 1px 1px 13px -2px rgba(168,165,168,0.58);
+      &:hover {
+        background-color: white;
+        color: #ee6c4d;
+        border: 1px solid #ee6c4d;
+        -webkit-box-shadow: 1px 1px 14px 2px rgba(168,165,168,0.58);
+        -moz-box-shadow: 1px 1px 14px 2px rgba(168,165,168,0.58);
+        box-shadow: 1px 1px 14px 2px rgba(168,165,168,0.58);
+      }
+    }
+  }
   .skills-used {
     display: flex;
     flex-wrap: wrap;
@@ -151,8 +183,8 @@ a {
       padding: 5px 10px 5px 10px;
       margin: 5px 10px 5px 0px;
       font-size: 14px;
-      color: gray;
-      border: 1px solid gray;
+      color: #ee6c4d;
+      border: 1px solid #ee6c4d;
       border-radius: 10px;
     }
   }
@@ -193,7 +225,7 @@ a {
     opacity: 0.8;
     cursor: pointer;
     float: right;
-    margin: 50px 0px;
+    margin: 0px 0px 50px 0px;
     p {
       text-align: center;
       font-weight: normal;
