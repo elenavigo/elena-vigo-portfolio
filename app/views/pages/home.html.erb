@@ -1,6 +1,6 @@
 <div class="banner-container">
   <img src='<%= image_path 'banner.jpeg'%>' alt="banner-image" id="banner-image" class="">
-  <div class="banner-info" id="banner-info">
+  <div class="banner-info header-pin" id="banner-info">
     <h1>ELENA VIGO</h1>
     <h4>Junior Full-Stack Web Developer</h4>
   </div>
@@ -12,15 +12,17 @@
       <img src="<%= image_path 'ElenaVigoAvatar.jpg'%>" alt="Elena Vigo" style="width: 120px; height: 120px; border-radius: 50%;">
     </div>
     <p data-aos="zoom-in">
-      I am Elena, I studied "International Business and Marketing" in Barcelona and I have experience in Digital Marketing (CRM). While working in my last position, I got to work closely with software engineers and I got fascinated. I found coding so powerful and I wanted to understand more about it, so I did Le Wagon Bootcamp. <br><br>
+      I am Elena, I studied International Business and Marketing in Barcelona and I have experience in CRM Management and Digital Marketing. In my last working experience, it was part of my job to use Python for customer's data treatment. That is when I first became interested in coding and after learning for some time on my own I decided to do Le Wagon Coding Bootcamp.<br><br>
 
-      After the Bootcamp final MVP project, me and my team continued developing the idea, design and development of "Vamos Barcelona" <a href="#vamos-project-link">(see below)</a>. I love the creativity of building a product from scratch and to make it evolve with a good eye for detail. I am specially interested in continue to develop my skills in Front-End JavaScript.<br><br>
+      I love the creativity of building a user-friendly product from scratch and to make it evolve with a good eye for detail. Currently I am working on 'Vamos Barcelona' <a href="#vamos-project-link">(see below)</a>.<br><br>
 
-      I am curious, I like to challenge myself and I spent 6 months solo traveling in Southeast Asia. I also enjoy meditation and I love going to music events.
+      I am curious, I like to challenge myself and I spent 6 months solo traveling in Southeast Asia. I also enjoy meditation and going to music events. Due to the current situation, I am using this quarantine time to improve my coding skills, practice React (JavaScript) and learn how to play classic guitar.
     </p>
-    <div data-aos="zoom-in" class="download-resume">
-      <%= link_to 'Download resume', asset_url('ElenaVigoResume.pdf'), target: "_blank" %>
-    </div>
+    <%= link_to asset_url('ElenaVigoResume.pdf'), target: "_blank" do %>
+      <div data-aos="zoom-in" class="download-resume">
+        Download resume
+      </div>
+    <% end %>
   </div>
 </section>
 <section id="experience">
@@ -34,15 +36,24 @@
               <span class="span-project-title">Vamos Barcelona</span>
             </a>
           </div>
+          <div class="project-links" data-aos="fade-left">
+            <div></div>
+            <div class="d-flex">
+              <a href="https://www.vamosbarcelona.com" target="_blank">
+                <div class="project-link"><i class="far fa-eye"></i>  View website</div>
+              </a>
+              <a href="https://github.com/elenavigo/vamos" target="_blank">
+                <div class="project-link"><i class="fab fa-github"></i>  Check code</div>
+              </a>
+            </div>
+          </div>
           <div data-aos="zoom-in">
             <p>"Find volunteering experiences locally and apply with a team of friends"</p>
             <ul>
-              <li>Mobile first website</li>
-              <li>Responsive design through media queries</li>
-              <li>API call for map display + Ruby gem for coordinates</li>
-              <li>Chat messaging between volunteers and NGOs</li>
-              <li>Project started in "Le Wagon", continued working on it and considering now launching MVP.</li>
-              <li>International and remote technical workflow with 2 other team members.</li>
+              <li>As it scales up, it is a daily challenge regarding its concept, design and development.</li>
+              <li>This project started in Le Wagon Bootcamp as the final project. We are currently contacting potential NGOs and users to get feedback and grow visibility.</li>
+              <li>International and remote technical workflow with two other team members.</li>
+              <li>Responsive Front End design for mobile, tablet and desktop.</li>
             </ul>
           </div>
           <div class="skills-used" data-aos="fade-right">
@@ -55,7 +66,7 @@
             <div class="skill">PostgreSQL</div>
             <div class="skill">Heroku</div>
             <div class="skill">Cloudinary</div>
-            <div class="skill">Mapbox API</div>
+            <div class="skill">API call</div>
             <div class="skill">Figma</div>
           </div>
         </div>
@@ -73,12 +84,22 @@
           <span class="span-project-title">Get Your Garden</span>
         </a>
       </div>
+      <div class="project-links" data-aos="fade-left">
+        <div></div>
+        <div class="d-flex">
+          <a href="http://get-your-garden.herokuapp.com/" target="_blank">
+            <div class="project-link"><i class="far fa-eye"></i>  View website</div>
+          </a>
+          <a href="https://github.com/elenavigo/get-your-garden" target="_blank">
+            <div class="project-link"><i class="fab fa-github"></i>  Check code</div>
+          </a>
+        </div>
+      </div>
       <div data-aos="zoom-in">
         <p >"Book gardens around you with friends or family"</p>
         <ul>
-          <li>Le Wagon project, for practice purposes</li>
-          <li>Desktop MVP website</li>
-          <li>Only available in Sidney for demo purposes</li>
+          <li>Website developed in Le Wagon to learn the basics of Front End and Back End development.</li>
+          <li>For demo purposes, this MVP website is designed for desktop and the location of the gardens available is in Sidney.</li>
         </ul>
       </div>
         <div class="skills-used" data-aos="fade-right">
@@ -91,7 +112,7 @@
           <div class="skill">PostgreSQL</div>
           <div class="skill">Heroku</div>
           <div class="skill">Cloudinary</div>
-          <div class="skill">Mapbox API</div>
+          <div class="skill">API call</div>
           <div class="skill">Figma</div>
         </div>
       </div>
