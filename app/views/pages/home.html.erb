@@ -1,236 +1,352 @@
-<div class="banner-container">
-  <img src='<%= image_path 'banner.jpeg'%>' alt="banner-image" id="banner-image" class="">
-  <div class="banner-info header-pin" id="banner-info">
-    <h1>ELENA VIGO</h1>
-    <h4>Junior Full-Stack Web Developer</h4>
+<div style="height: 84px;">
+  <div class="navbar">
+    <div class="navbar-content">
+      <a id="hello-button" class="element-button" href="">HELLO</a>
+      <a id="resume-button" class="element-button" href="">RESUME</a>
+      <a id="portfolio-button" class="element-button" href="">PORTFOLIO</a>
+      <a id="contact-button" class="element-button" href="">CONTACT</a>
+    </div>
   </div>
 </div>
-<section id="about">
-  <h4>ABOUT</h4>
-  <div class="card-item">
-    <div class="text-center mb-4 mt-2" data-aos="zoom-in">
-      <img src="<%= image_path 'ElenaVigoAvatar.jpg'%>" alt="Elena Vigo" style="width: 120px; height: 120px; border-radius: 50%;">
-    </div>
-    <div data-aos="zoom-in">
-      <p>I am Elena, I studied International Business and Marketing in Barcelona and I have previous experience in CRM Management, which involved data treatment automation with Python. That was the first time I worked with code, and I got fascinated by it. After learning for some time on my own I decided to do Le Wagon Fullstack Bootcamp.</p>
-      <p>I am curious and I love the creativity of building a user-friendly product from scratch and to make it evolve with a good eye for detail. I am currently working on 'Vamos Barcelona', a social platform that connects NGOs with volunteers through volunteering opportunities. I am also learning more about Computer Science through a CS50 course.</p>
-      <p>Interests:</p>
-      <p>🌏 6 months solo traveling in Southeast Asia | 🎧 Love music | 🎸 Learning to play classic guitar | 🐠 Like scubadiving | 🧘🏽‍♀️ Enjoy meditation</p>
-    </div>
 
-    <%= link_to asset_url('ElenaVigoResume.pdf'), target: "_blank" do %>
-      <div data-aos="zoom-in" class="download-resume">
-        Download resume
+<div class="banner-container">
+  <div class="main-container">
+    <div class="banner-content">
+      <div class="element-1">
+        <img src="<%= image_path 'ElenaVigoAvatar.jpg'%>" alt="Elena Vigo" style="width: 180px; height: 180px; border-radius: 50%;">
       </div>
-    <% end %>
-  </div>
-</section>
-<section id="experience">
-  <h4>EXPERIENCE</h4>
-  <div class="card-item">
-    <a id="vamos-project-link">
-      <div class="project">
-        <div>
-          <div class="project-title" data-aos="zoom-in">
-            <span class="span-project-title">Vamos Barcelona</span>
-            <br>
-            <span style="font-size:18px;">(Co-Founder)</span>
-          </div>
-          <div class="project-links" data-aos="fade-left">
-            <div></div>
-            <div class="d-flex">
-              <a href="https://www.vamosbarcelona.com" target="_blank">
-                <div class="project-link"><i class="far fa-eye"></i>  View website</div>
-              </a>
-              <a href="https://github.com/elenavigo/vamos" target="_blank">
-                <div class="project-link"><i class="fab fa-github"></i>  Check code</div>
-              </a>
-            </div>
-          </div>
-          <div data-aos="zoom-in">
-            <p style="font-style:italic;font-weight:normal;">4 friends, 1 idea and 2 months of quarantine.</p>
-            <div class="d-flex align-items-center">
-              <div class="icon-container">
-                <i class="fi-xtlrxl-arrow-simple-thin"></i>
-              </div>
-              <p style="margin-bottom:0px">Currently working on the frontend and backend of the website, getting in touch with NGOs that need more volunteers and getting user feedback.</p>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="icon-container">
-                <i class="fi-xtsuxl-bulb-thin"></i>
-              </div>
-              <p style="margin-bottom:0px">Initially build for helping people during COVID times, now focused on getting young people involved in local volunteering.</p>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="icon-container">
-                <i class="fi-xtllxl-tools-thin"></i></i>
-              </div>
-              <p style="margin-bottom:0px">Responsive web application: mobile & desktop.</p>
-            </div>
-          </div>
-          <div class="skills-used" data-aos="fade-right">
-            <div class="skill">HTML</div>
-            <div class="skill">SCSS</div>
-            <div class="skill">Bootstrap</div>
-            <div class="skill">Ruby on Rails</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Webpack</div>
-            <div class="skill">PostgreSQL</div>
-            <div class="skill">Heroku</div>
-            <div class="skill">Cloudinary</div>
-            <div class="skill">API call</div>
-            <div class="skill">Figma</div>
-          </div>
-        </div>
-        <div class="vamos-pictures" data-aos="fade-up">
-          <img src='<%= image_path 'vamos_project/vamos1.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
-          <img src='<%= image_path 'vamos_project/vamos3.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
-          <img src='<%= image_path 'vamos_project/vamos6.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
-          <img src='<%= image_path 'vamos_project/vamos8.png'%>' alt="vamos-barcelona" class="vamos-picture mx-2">
-        </div>
-      </div>
-    </a>
-    <div class="project">
-      <div class="project-title" data-aos="zoom-in">
-        <span class="span-project-title">Get Your Garden</span>
-      </div>
-      <div class="project-links" data-aos="fade-left">
-        <div></div>
-        <div class="d-flex">
-          <a href="http://get-your-garden.herokuapp.com/" target="_blank">
-            <div class="project-link"><i class="far fa-eye"></i>  View website</div>
-          </a>
-          <a href="https://github.com/elenavigo/get-your-garden" target="_blank">
-            <div class="project-link"><i class="fab fa-github"></i>  Check code</div>
-          </a>
-        </div>
-      </div>
-      <div data-aos="zoom-in">
-        <div class="d-flex align-items-center">
-          <div class="icon-container">
-            <i class="fi-xtsuxl-bulb-thin"></i>
-          </div>
-          <p style="margin-bottom:0px">MVP web application developed in Le Wagon Bootcamp as the final project: <br> "Book gardens around you with friends or family".</p>
-        </div>
-        <div class="d-flex align-items-center">
-          <div class="icon-container">
-            <i class="fi-xtllxl-tools-thin"></i></i>
-          </div>
-          <p style="margin-bottom:0px">For demo purposes, the location of the available gardens is in Sidney, Australia.</p>
-        </div>
-      </div>
-        <div class="skills-used" data-aos="fade-right">
-          <div class="skill">HTML</div>
-          <div class="skill">SCSS</div>
-          <div class="skill">Bootstrap</div>
-          <div class="skill">Ruby on Rails</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">Webpack</div>
-          <div class="skill">PostgreSQL</div>
-          <div class="skill">Heroku</div>
-          <div class="skill">Cloudinary</div>
-          <div class="skill">API call</div>
-          <div class="skill">Figma</div>
-        </div>
-      </div>
-      <div class="getyourgarden-pictures">
-        <div class="content-align-left" data-aos="fade-up"><img src='<%= image_path 'getyourgarden_project/garden1.png'%>' alt="get-your-garden" class="getyourgarden-picture"></div>
+      <div class="element-2">
+        <h1 class="my-name" data-aos="fade-left">Hi, my name is Elena!</h1>
+        <h3 class="my-job" data-aos="fade-left">Full-Stack Developer</h3>
       </div>
     </div>
-  </div>
-</section>
-<section id="skills">
-  <h4>SKILLS</h4>
-  <div class="card-item">
-    <h6>Version Control + Colaboration</h6>
-    <div class="skills-group">
-      <div class="skill" data-aos="zoom-in">
-        <img src='<%= image_path 'logos/git.png'%>' alt="git-logo">
-        <p>Git</p>
-      </div>
-      <div class="skill" data-aos="zoom-in">
-        <img src='<%= image_path 'logos/github.jpg'%>' alt="github-logo">
-        <p>GitHub</p>
-      </div>
-    </div>
-    <h6>Front End Development</h6>
-    <div class="skills-group">
-      <div class="skill" data-aos="zoom-in">
-        <img src='<%= image_path 'logos/html.png'%>' alt="html-logo">
-        <p>HTML</p>
-      </div>
-      <div class="skill" data-aos="zoom-in">
-        <img src='<%= image_path 'logos/css.svg'%>' alt="css-logo">
-        <p>CSS</p>
-      </div>
-      <div class="skill" data-aos="zoom-in">
-        <img src='<%= image_path 'logos/javascript.png'%>' alt="javascript-logo">
-        <p>JavaScript</p>
-      </div>
-    </div>
-    <div class="skills-group">
-      <div class="skill" data-aos="zoom-in">
-        <img src='<%= image_path 'logos/bootstrap.jpeg'%>' alt="bootstrap-logo">
-        <p>Bootstrap</p>
-      </div>
-      <div class="skill" data-aos="zoom-in">
-        <img src='<%= image_path 'logos/react.svg'%>' alt="react-logo">
-        <p>React (loading)</p>
-      </div>
-      <div class="skill" data-aos="zoom-in">
-        <img src='<%= image_path 'logos/redux.png'%>' alt="redux-logo">
-        <p>Redux (loading)</p>
-      </div>
-    </div>
-    <h6>Back End Development</h6>
-    <div class="skills-group">
-      <div class="skill" data-aos="zoom-in">
-        <img src='<%= image_path 'logos/ruby.png'%>' alt="ruby-logo">
-        <p>Ruby</p>
-      </div>
-      <div class="skill" data-aos="zoom-in">
-        <img src='<%= image_path 'logos/rails.png'%>' alt="rails-logo">
-        <p>Rails</p>
-      </div>
-      <div class="skill" data-aos="zoom-in">
-        <img src='<%= image_path 'logos/postgresql.png'%>' alt="postgresql-logo">
-        <p>PostgreSQL</p>
-      </div>
-    </div>
-    <h6>Deployment</h6>
-    <div class="skills-group">
-      <div class="skill" data-aos="zoom-in">
-        <img src='<%= image_path 'logos/heroku.png'%>' alt="heroku-logo">
-        <p>Heroku</p>
-      </div>
-    </div>
-    <h6>Design</h6>
-    <div class="skills-group">
-      <div class="skill" data-aos="zoom-in">
-        <img src='<%= image_path 'logos/figma.png'%>' alt="figma-logo">
-        <p>Figma</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="contact">
-  <h4>GET IN TOUCH</h4>
-  <div class="card-item">
-    <div class="contact-options">
-      <div data-aos="fade-left">
-        <a href="mailto:elenavigoolivan@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-      </div>
-      <div data-aos="fade-up">
-        <a href="https://www.linkedin.com/in/evigo/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      <div data-aos="fade-right">
-        <a href="https://github.com/elenavigo" target="_blank"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="scroll-top-container">
-  <div id="scroll-top">
-    <p>Go back to top</p>
   </div>
 </div>
+
+<div class="main-container">
+  <section id="hello">
+    <h1 class="section-title">Hello</h1>
+    <div class="hello-box">
+      <p>I found my coding interest in a previous job position and I transformed it into a passion after months of learning, courses and rewarding work. I love the creativity of building a user-friendly product and to improve it with a strong eye for detail.</p>
+      <p>I like to challenge myself and to get out of my comfort zone.</p>
+      <p>🌏 6 months solo traveling in Southeast Asia | 🎧 Love music | 🎸 Learning to play classic guitar | 🐠 Like scubadiving | 🧘🏽‍♀️ Practice meditation</p>
+    </div>
+  </section>
+  <section id="resume">
+    <h1 class="section-title">Resume</h1>
+    <div class="section-content">
+      <div class="education-part">
+        <h5 class="part-title">EDUCATION</h5>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <p class="title">HARVARD UNIVERSITY</p>
+              <p class="year">2020</p>
+              <p class="subject">Introduction to Computer Science Course</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <p class="title">CODECADEMY</p>
+              <p class="year">2020</p>
+              <p class="subject">HTML, CSS, JavaScript, React.js, Ruby and Swift online courses</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <p class="title">LE WAGON BOOTCAMP</p>
+              <p class="year">2020</p>
+              <p class="subject">Full-Stack Web Development Course</p>
+            </div>
+          </div>
+          <div class="timeline-item pb-1">
+            <div class="timeline-content">
+              <p class="title">UNIVERSITY OF FLORIDA & POMPEU FABRA UNIVERSITY</p>
+              <p class="year">2015 - 2019</p>
+              <p class="subject">International Business and Marketing Bachelor</p>
+            </div>
+          </div>
+          <div class="timeline-circle circle-1"></div>
+          <div class="timeline-circle circle-2"></div>
+          <div class="timeline-circle circle-3"></div>
+          <div class="timeline-circle circle-4"></div>
+        </div>
+      </div>
+      <div class="experience-part">
+        <h5 class="part-title">EXPERIENCE</h5>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <a href="http://vamosbarcelona.com/"><p class="title">VAMOS BARCELONA &nbsp <i class="fas fa-external-link-alt"></i></p></a>
+              <p class="year">2020</p>
+              <p class="subject">Full-Stack Web Developer & Co-Founder</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <p class="title">ACCENTURE</p>
+              <p class="year">2018 - 2019</p>
+              <p class="subject">Digital Marketing and CRM Management</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <p class="title">N&N CONSULTING</p>
+              <p class="year">2017</p>
+              <p class="subject">Export consultant</p>
+            </div>
+          </div>
+          <div class="timeline-circle circle-1"></div>
+          <div class="timeline-circle circle-2"></div>
+          <div class="timeline-circle circle-3"></div>
+        </div>
+      </div>
+      <div class="skills-part">
+        <h4 class="part-title"></h4>
+        <h6 class="skills-type">LANGUAGES</h6>
+        <div class="skills">
+            <div class="skill" data-aos="zoom-in" >
+              <img src='<%= image_path 'logos/html.png'%>' alt="html-logo">
+              <p>HTML</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/css.svg'%>' alt="css-logo">
+              <p>CSS</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/javascript.png'%>' alt="javascript-logo">
+              <p>JavaScript</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/ruby.png'%>' alt="ruby-logo">
+              <p>Ruby</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/c.png'%>' alt="c-logo">
+              <p>C</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/python.png'%>' alt="python-logo">
+              <p>Python</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/swift.png'%>' alt="swift-logo">
+              <p>Swift</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/sql.png'%>' alt="sql-logo">
+              <p>SQL</p>
+            </div>
+          </div>
+          <h6 class="skills-type">FRAMEWORKS, LIBRARIES, TOOLS</h6>
+          <div class="skills">
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/react.svg'%>' alt="react-logo">
+              <p>React</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/rails.png'%>' alt="rails-logo">
+              <p>Rails</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/xcode.jpeg'%>' alt="xcode-logo">
+              <p>Xcode</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/bootstrap.png'%>' alt="bootstrap-logo">
+              <p>Bootstrap</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/postgresql.png'%>' alt="postgresql-logo">
+              <p>PostgreSQL</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/git.png'%>' alt="git-logo">
+              <p>Git</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/github.png'%>' alt="github-logo">
+              <p>GitHub</p>
+            </div>
+
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/heroku.png'%>' alt="heroku-logo">
+              <p>Heroku</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/figma.png'%>' alt="figma-logo">
+              <p>Figma</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio">
+    <h1 class="section-title">Portfolio</h1>
+    <div class="section-content">
+      <div class="project vamos-project" data-aos="fade-up">
+        <div class="project-images">
+          <div class="project-picture">
+            <img src="<%= image_path 'projects/vamos-picture'%>" alt="vamos-picture">
+            <div class="project-logo">
+              <img src='<%= image_path 'projects/vamos-logo.png'%>' alt="vamos-logo">
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://www.vamosbarcelona.com" target="_blank">
+              <div class="project-link project-link1">CHECK WEBSITE</div>
+            </a>
+            <a href="https://github.com/elenavigo/vamos" target="_blank">
+              <div class="project-link project-link2">CHECK CODE</div>
+            </a>
+          </div>
+        </div>
+        <div class="project-text">
+          <h5>VAMOS BARCELONA</h5>
+          <p>4 friends, 1 idea and 2 months of quarantine. Responsive web application focused on getting young people involved in local projects.</p>
+          <div class="skills-used">
+            <div class="skill">
+              HTML
+            </div>
+            <div class="skill">
+              CSS
+            </div>
+            <div class="skill">
+              JavaScript
+            </div>
+            <div class="skill">
+              Ruby
+            </div>
+            <div class="skill">
+              Rails
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project garden-project" data-aos="fade-up">
+        <div class="project-images">
+          <div class="project-picture">
+            <img src="<%= image_path 'projects/garden-picture.jpg'%>" alt="garden-picture">
+            <div class="project-logo">
+              <img src='<%= image_path 'projects/garden-logo.png'%>' alt="garden-logo">
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="http://get-your-garden.herokuapp.com/" target="_blank">
+              <div class="project-link project-link1">CHECK WEBSITE</div>
+            </a>
+            <a href="https://github.com/elenavigo/get-your-garden" target="_blank">
+              <div class="project-link project-link2">CHECK CODE</div>
+            </a>
+          </div>
+        </div>
+        <div class="project-text">
+          <h5>GET YOUR GARDEN</h5>
+          <p>"Book gardens around you with friends or family" For demo purposes, the location of the available gardens is in Sidney, AUS.</p>
+          <div class="skills-used">
+            <div class="skill">
+              HTML
+            </div>
+            <div class="skill">
+              CSS
+            </div>
+            <div class="skill">
+              JavaScript
+            </div>
+            <div class="skill">
+              Ruby
+            </div>
+            <div class="skill">
+              Rails
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project todolist-project" data-aos="fade-up">
+        <div class="project-images">
+          <div class="project-picture">
+            <img src="<%= image_path 'projects/todolist-picture'%>" alt="todolist-picture">
+            <div class="project-handmade-logo">
+              TO DO
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/elenavigo/notes" target="_blank">
+              <div class="project-link project-link3">CHECK CODE</div>
+            </a>
+          </div>
+        </div>
+        <div class="project-text">
+          <h5>TO-DO LIST</h5>
+          <p>iOS Application that lets you manage and keep track of daily tasks.</p>
+          <div class="skills-used">
+            <div class="skill">
+              Swift
+            </div>
+            <div class="skill">
+              Xcode
+            </div>
+            <div class="skill">
+              iOS
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project flats-project" data-aos="fade-up">
+        <div class="project-images">
+          <div class="project-picture">
+            <img src="<%= image_path 'projects/flats-picture'%>" alt="flats-picture">
+            <div class="project-handmade-logo">
+              FLATS
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/elenavigo/react-flats" target="_blank">
+              <div class="project-link project-link3">CHECK CODE</div>
+            </a>
+          </div>
+        </div>
+        <div class="project-text">
+          <h5>FLATS MAP</h5>
+          <p>Single-page application that lets you select a flat and locate the address on a Google Maps map.</p>
+          <div class="skills-used">
+            <div class="skill">
+              React
+            </div>
+            <div class="skill">
+              Redux
+            </div>
+            <div class="skill">
+              HTML
+            </div>
+            <div class="skill">
+              CSS
+            </div>
+            <div class="skill">
+              JavaScript
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+<section id="contact-me">
+  <div class="main-container">
+    <h1 class="section-title">Let's get in touch!</h1>
+    <div class="section-content">
+      <div class="contact-options">
+        <div data-aos="fade-left">
+          <a href="mailto:elenavigoolivan@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+        </div>
+        <div data-aos="fade-up">
+          <a href="https://www.linkedin.com/in/evigo/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div data-aos="fade-right">
+          <a href="https://github.com/elenavigo" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
