@@ -4,12 +4,9 @@
 
 body {
   font-family: 'Work Sans', sans-serif;
-  // OLD ONE
-  // background-color: #70a1ff;
-  // background-image: linear-gradient(315deg, #70a1ff 0%, #c2c0c0 74%);
-  // NEW ONE
   background-color: #FFFFFF;
   color: #4A4A4A;
+  margin: 0;
 }
 
 a {
@@ -25,11 +22,11 @@ a {
   margin: auto;
 }
 
-.navbar {
+.navbar-container {
+  width: inherit;
   background-color: #313130;
   color: white;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding: 50px 0px 20px 0px;
   transition: background-color 1s;
   .navbar-content {
     width: 80%;
@@ -45,7 +42,8 @@ a {
   &.fix-navbar {
     width: 100%;
     position: fixed;
-    top:0;
+    top: 0;
+    left: 0;
     z-index: 1;
     background-color: white;
     color: #313130;
@@ -56,13 +54,14 @@ a {
 }
 
 .banner-container {
-  height: 270px;
+  min-height: 270px;
   background-color: #313130;
   color: white;
   padding-top: 30px;
   .banner-content {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     .element-2 {
       margin-left: 40px;
     }
@@ -199,7 +198,7 @@ a {
     }
     .project-images {
       height: 300px;
-      width: 300px;
+      width: 100%;
       position: relative;
       .project-picture {
         position: relative;
@@ -359,11 +358,50 @@ a {
 
 }
 
-@media(min-width: 768px) and (max-width: 991px) {
-
+@media(min-width: 768px) and (max-width: 932px) {
+  .banner-container {
+    .banner-content {
+      display: inherit;
+      .element-1 {
+        margin: auto;
+        width: 180px;
+      }
+      .element-2 {
+        margin-left: 0px;
+        padding-bottom: 30px;
+      }
+    }
+  }
 }
 
 @media(max-width: 767px) {
-
+  .navbar-container .navbar-content {
+    .element-button {
+      margin-right: 20px;
+    }
+  }
+  .banner-container {
+    .banner-content {
+      display: inherit;
+      .element-1 {
+        margin: auto;
+        width: 180px;
+      }
+      .element-2 {
+        margin-left: 0px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+  #hello {
+    .hello-box {
+      width: 100%;
+    }
+  }
+  #contact-me {
+    .contact-options {
+      width: 300px;
+    }
+  }
 }
 
