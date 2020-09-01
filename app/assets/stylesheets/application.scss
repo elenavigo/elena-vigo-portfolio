@@ -132,15 +132,19 @@ a {
         }
         &.circle-2 {
           left: -8px;
-          top: 99px;
+          top: 98px;
         }
         &.circle-3 {
           left: -8px;
-          top: 198px;
+          top: 196px;
         }
         &.circle-4 {
           left: -8px;
-          top: 297px;
+          top: 294px;
+        }
+        &.circle-5 {
+          left: -8px;
+          top: 392px;
         }
       }
     }
@@ -263,9 +267,6 @@ a {
         .project-link2 {
           top: 160px;
         }
-        .project-link3 {
-          top: 140px;
-        }
       }
     }
     .project-text {
@@ -326,6 +327,22 @@ a {
       }
       .skill {
         color: #DD8374;
+      }
+    }
+    &.gifs-project {
+      .project-images {
+        background-color: #F7EE6A;
+      }
+      .skill {
+        color: #EEBB33;
+      }
+    }
+    &.quizz-project {
+      .project-images {
+        background-color: #2636BD;
+      }
+      .skill {
+        color: #2636BD;
       }
     }
   }

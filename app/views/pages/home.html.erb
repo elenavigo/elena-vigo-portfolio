@@ -40,6 +40,13 @@
         <div class="timeline">
           <div class="timeline-item" data-aos="fade-left">
             <div class="timeline-content">
+              <p class="title">UDEMY</p>
+              <p class="year">2020</p>
+              <p class="subject">iOS 13 & Swift 5 online course</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-content">
               <p class="title">HARVARD UNIVERSITY</p>
               <p class="year">2020</p>
               <p class="subject">Introduction to Computer Science Course</p>
@@ -70,6 +77,7 @@
           <div class="timeline-circle circle-2"></div>
           <div class="timeline-circle circle-3"></div>
           <div class="timeline-circle circle-4"></div>
+          <div class="timeline-circle circle-5"></div>
         </div>
       </div>
       <div class="experience-part">
@@ -271,14 +279,50 @@
             </div>
           </div>
           <div class="project-links">
+            <button type="button" class="btn project-link project-link1" data-toggle="modal" data-target="#notesModal">
+              CHECK DEMO
+            </button>
             <a href="https://github.com/elenavigo/notes" target="_blank">
-              <div class="project-link project-link3">CHECK CODE</div>
+              <div class="project-link project-link2">CHECK CODE</div>
             </a>
           </div>
         </div>
         <div class="project-text">
           <h5>TO-DO LIST</h5>
           <p>iOS Application that lets you manage and keep track of daily tasks.</p>
+          <div class="skills-used">
+            <div class="skill">
+              Swift
+            </div>
+            <div class="skill">
+              Xcode
+            </div>
+            <div class="skill">
+              iOS
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project quizz-project" data-aos="fade-up">
+        <div class="project-images">
+          <div class="project-picture">
+            <img src="<%= image_path 'projects/quizz-picture'%>" alt="quizz-picture">
+            <div class="project-handmade-logo">
+              QUIZZ
+            </div>
+          </div>
+          <div class="project-links">
+            <button type="button" class="btn project-link project-link1" data-toggle="modal" data-target="#quizzModal">
+              CHECK DEMO
+            </button>
+            <a href="https://github.com/elenavigo/Quizzler-iOS13" target="_blank">
+              <div class="project-link project-link2">CHECK CODE</div>
+            </a>
+          </div>
+        </div>
+        <div class="project-text">
+          <h5>12-QUESTION QUIZZ</h5>
+          <p>iOS Application that displays 12 quizz-questions and reacts to the user's answer if it is correct or not.</p>
           <div class="skills-used">
             <div class="skill">
               Swift
@@ -301,8 +345,11 @@
             </div>
           </div>
           <div class="project-links">
+            <button type="button" class="btn project-link project-link1" data-toggle="modal" data-target="#flatsModal">
+              CHECK DEMO
+            </button>
             <a href="https://github.com/elenavigo/react-flats" target="_blank">
-              <div class="project-link project-link3">CHECK CODE</div>
+              <div class="project-link project-link2">CHECK CODE</div>
             </a>
           </div>
         </div>
@@ -328,8 +375,111 @@
           </div>
         </div>
       </div>
-
+      <div class="project gifs-project" data-aos="fade-up">
+        <div class="project-images">
+          <div class="project-picture">
+            <img src="<%= image_path 'projects/gifs-picture'%>" alt="gifs-picture">
+            <div class="project-handmade-logo">
+              GIFS
+            </div>
+          </div>
+          <div class="project-links">
+            <button type="button" class="btn project-link project-link1" data-toggle="modal" data-target="#gifsModal">
+              CHECK DEMO
+            </button>
+            <a href="https://github.com/elenavigo/react-gifs" target="_blank">
+              <div class="project-link project-link2">CHECK CODE</div>
+            </a>
+          </div>
+        </div>
+        <div class="project-text">
+          <h5>GIFS API</h5>
+          <p>Single-page application where you can look up animated GIFS and display them in the center.</p>
+          <div class="skills-used">
+            <div class="skill">
+              React
+            </div>
+            <div class="skill">
+              Redux
+            </div>
+            <div class="skill">
+              HTML
+            </div>
+            <div class="skill">
+              CSS
+            </div>
+            <div class="skill">
+              JavaScript
+            </div>
+            <div class="skill">
+              API
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="modal fade" id="notesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">TO-DO LIST</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body m-auto">
+            <%= image_tag("notes.gif") %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="quizzModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">12-QUESTION QUIZZ</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body m-auto">
+            <%= image_tag("quizz.gif") %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="flatsModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">PARIS MAP FLATS</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body m-auto">
+            <%= image_tag("flats.gif") %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="gifsModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">GIFS API</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body m-auto">
+            <%= image_tag("gifs.gif") %>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 </div>
 <section id="contact-me">
