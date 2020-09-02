@@ -94,8 +94,8 @@ a {
 #resume {
   .part-title {
     color: gray;
-      letter-spacing: 3px;
-      font-size: 14px;
+    letter-spacing: 3px;
+    font-size: 14px;
   }
   .education-part, .experience-part {
     .timeline {
@@ -111,11 +111,15 @@ a {
           .title {
             margin-bottom: 5px;
             font-size: 14px;
+            font-weight: bold;
           }
           .year {
             color: #999999;
             margin-bottom: 8px;
             font-size: 12px;
+          }
+          .subject {
+            font-weight: lighter;
           }
         }
       }
