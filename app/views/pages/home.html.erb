@@ -271,6 +271,39 @@
           </div>
         </div>
       </div>
+      <div class="project bmi-project" data-aos="fade-up">
+        <div class="project-images">
+          <div class="project-picture">
+            <img src="<%= image_path 'projects/bmi-picture'%>" alt="bmi-picture">
+            <div class="project-logo">
+              <img src='<%= image_path 'projects/bmi-logo.png'%>' alt="bmi-logo">
+            </div>
+          </div>
+          <div class="project-links">
+            <button type="button" class="btn project-link project-link1" data-toggle="modal" data-target="#bmiModal">
+              CHECK DEMO
+            </button>
+            <a href="https://github.com/elenavigo/BMI-Calculator-iOS13" target="_blank">
+              <div class="project-link project-link2">CHECK CODE</div>
+            </a>
+          </div>
+        </div>
+        <div class="project-text">
+          <h5>BMI CALCULATOR</h5>
+          <p>iOS Application that calculates your Body Mass Index (BMI).</p>
+          <div class="skills-used">
+            <div class="skill">
+              Swift
+            </div>
+            <div class="skill">
+              Xcode
+            </div>
+            <div class="skill">
+              iOS
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="project todolist-project" data-aos="fade-up">
         <div class="project-images">
           <div class="project-picture">
@@ -431,6 +464,21 @@
           </div>
           <div class="modal-body m-auto">
             <%= image_tag("notes.gif") %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="bmiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">BMI CALCULATOR</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body m-auto">
+            <%= image_tag("bmi.gif") %>
           </div>
         </div>
       </div>

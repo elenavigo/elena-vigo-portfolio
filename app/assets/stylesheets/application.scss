@@ -278,6 +278,7 @@ a {
       padding: 20px 10px 20px 10px;
       h5 {
         font-weight: bold;
+        letter-spacing: 2px;
       }
       p {
         font-size: 14px;
@@ -314,7 +315,18 @@ a {
         top: 100px;
       }
       .skill {
-        color: blue;
+        color: #297EB5;
+      }
+    }
+    &.bmi-project {
+      .project-images {
+        background-color: #C691E5;
+      }
+      .skill {
+        color: #C691E5;
+      }
+      .project-logo {
+        top: 0px;
       }
     }
     &.todolist-project {
