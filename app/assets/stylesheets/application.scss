@@ -110,7 +110,7 @@ a {
         .timeline-content {
           .title {
             margin-bottom: 5px;
-            font-size: 14px;
+
             font-weight: bold;
           }
           .year {
@@ -120,6 +120,7 @@ a {
           }
           .subject {
             font-weight: lighter;
+            font-size: 14px;
           }
         }
       }
@@ -149,6 +150,10 @@ a {
         &.circle-5 {
           left: -8px;
           top: 392px;
+        }
+        &.circle-6 {
+          left: -8px;
+          top: 490px;
         }
       }
     }
