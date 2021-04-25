@@ -1,6 +1,4 @@
 const buttonPressed = () => {
-  const helloButton = document.getElementById('hello-button');
-  const helloLocation = document.getElementById('hello');
   const resumeButton = document.getElementById('resume-button');
   const resumeLocation = document.getElementById('resume');
   const portfolioButton = document.getElementById('portfolio-button');
@@ -9,11 +7,6 @@ const buttonPressed = () => {
   const contactLocation = document.getElementById('contact-me');
 
   const heightNavbar = 100;
-
-  helloButton.addEventListener('click', (event) => {
-    window.scroll({ top: (helloLocation.offsetTop - heightNavbar), behavior: 'smooth' });
-    event.preventDefault();
-  });
 
   resumeButton.addEventListener('click', (event) => {
     window.scroll({ top: (resumeLocation.offsetTop - heightNavbar), behavior: 'smooth' });

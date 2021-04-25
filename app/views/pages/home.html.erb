@@ -1,7 +1,6 @@
 <div style="height: 84px;">
   <div class="navbar-container">
     <div class="navbar-content">
-      <a id="hello-button" class="element-button" href="">HELLO</a>
       <a id="resume-button" class="element-button" href="">RESUME</a>
       <a id="portfolio-button" class="element-button" href="">PORTFOLIO</a>
       <a id="contact-button" class="element-button" href="">CONTACT</a>
@@ -17,7 +16,7 @@
       </div>
       <div class="element-2">
         <h1 class="my-name" data-aos="fade-left">Hi, my name is Elena!</h1>
-        <h3 class="my-job" data-aos="fade-left">Full-Stack Developer</h3>
+        <h3 class="my-job" data-aos="fade-left">Web Developer</h3>
       </div>
     </div>
   </div>
@@ -25,30 +24,55 @@
 
 <div class="main-container">
   <section id="hello">
-    <h1 class="section-title">Hello</h1>
     <div class="hello-box">
-      <h4><i>~ How I transformed a passion into a career. ~</i></h4>
-      <br>
-      <p>I became interested in coding in a former position in Marketing where I used Python. I instantly fell in love with it because of its creativity, logic and organisation. Now, less than 1 year later, I am a Coding Bootcamp graduate with experience in +10 diverse projects developing dynamic mobile applications and building web applications.</p>
-      <p>🌱 Get out of comfort zone | 🇬🇧 Lived in English speaking countries | 🌏 6 months solo-traveling Southeast Asia | 🎧 Music | 🎸 Classic guitar | 🧘🏽‍♀️ Meditation | 🐠 Scubadiving </p>
+      <h4><i>~ I became interested in coding in a former position and I fell in love with it because of its creativity, logic and organisation. ~</i></h4>
     </div>
   </section>
   <section id="resume">
     <h1 class="section-title">Resume</h1>
     <div class="section-content">
+      <div class="experience-part">
+        <h5 class="part-title">EXPERIENCE</h5>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-content">
+              <p class="title">JavaScript Web Developer</p>
+              <p class="year">2020 - Present</p>
+              <p class="subject">MARFEEL</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-content">
+              <a href="http://vamosbarcelona.com/"><p class="title">Full-Stack Web Developer & Co-Founder</p></a>
+              <p class="year">2020</p>
+              <p class="subject">VAMOS VOLUNTEERING &nbsp <i class="fas fa-external-link-alt"></i></p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-content">
+              <p class="title">CRM Data Management (Digital Marketing)</p>
+              <p class="year">2018 - 2019</p>
+              <p class="subject">ACCENTURE</p>
+            </div>
+          </div>
+          <div class="timeline-circle circle-1"></div>
+          <div class="timeline-circle circle-2"></div>
+          <div class="timeline-circle circle-3"></div>
+        </div>
+      </div>
       <div class="education-part">
         <h5 class="part-title">EDUCATION</h5>
-      <div class="timeline">
+        <div class="timeline">
           <div class="timeline-item" data-aos="fade-left">
             <div class="timeline-content">
               <p class="title">React.js (Redux, Mongo, Node, Unit Test, SASS)</p>
-              <p class="year">Present</p>
+              <p class="year">2020</p>
               <p class="subject">UDEMY Online Course</p>
             </div>
           </div>
           <div class="timeline-item" data-aos="fade-left">
             <div class="timeline-content">
-              <p class="title">Swift 5 + iOS 13 App Development</p>
+              <p class="title">Swift 5 + iOS 13 App Development Basics</p>
               <p class="year">2020</p>
               <p class="subject">UDEMY Online Course</p>
             </div>
@@ -89,46 +113,21 @@
           <div class="timeline-circle circle-6"></div>
         </div>
       </div>
-      <div class="experience-part">
-        <h5 class="part-title">EXPERIENCE</h5>
-        <div class="timeline">
-          <div class="timeline-item" data-aos="fade-left">
-            <div class="timeline-content">
-              <a href="http://vamosbarcelona.com/"><p class="title">Full-Stack Web Developer & Co-Founder</p></a>
-              <p class="year">2020</p>
-              <p class="subject">VAMOS VOLUNTEERING &nbsp <i class="fas fa-external-link-alt"></i></p>
-            </div>
-          </div>
-          <div class="timeline-item" data-aos="fade-left">
-            <div class="timeline-content">
-              <p class="title">Digital Marketing and CRM Management</p>
-              <p class="year">2018 - 2019</p>
-              <p class="subject">ACCENTURE</p>
-            </div>
-          </div>
-          <div class="timeline-item" data-aos="fade-left">
-            <div class="timeline-content">
-              <p class="title">Export consultant</p>
-              <p class="year">2017</p>
-              <p class="subject">N&N CONSULTING</p>
-            </div>
-          </div>
-          <div class="timeline-circle circle-1"></div>
-          <div class="timeline-circle circle-2"></div>
-          <div class="timeline-circle circle-3"></div>
-        </div>
-      </div>
       <div class="skills-part">
         <h4 class="part-title"></h4>
         <h6 class="skills-type">LANGUAGES</h6>
         <div class="skills">
             <div class="skill" data-aos="zoom-in">
-              <img src='<%= image_path 'logos/ruby.png'%>' alt="ruby-logo">
-              <p>Ruby</p>
-            </div>
-            <div class="skill" data-aos="zoom-in">
               <img src='<%= image_path 'logos/javascript.png'%>' alt="javascript-logo">
               <p>JavaScript</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/typescript.png'%>' alt="ruby-typescript">
+              <p>Typescript</p>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <img src='<%= image_path 'logos/ruby.png'%>' alt="ruby-logo">
+              <p>Ruby</p>
             </div>
             <div class="skill" data-aos="zoom-in">
               <img src='<%= image_path 'logos/sql.png'%>' alt="sql-logo">
@@ -205,6 +204,31 @@
   <section id="portfolio">
     <h1 class="section-title">Portfolio</h1>
     <div class="section-content">
+      <div class="project music-project" data-aos="fade-up">
+        <div class="project-images">
+          <div class="project-picture">
+            <img src="<%= image_path 'projects/music-picture'%>" alt="music-picture">
+            <div class="project-logo">
+              <img src='<%= image_path 'projects/loading.gif'%>' alt="music-logo">
+            </div>
+          </div>
+        </div>
+        <div class="project-text">
+          <h5>MUSIC LYRICS PROJECT</h5>
+          <p>Cool music lyrics searcher that calls a lyrics API to render the results. I made it for practice purposes. </p>
+          <div class="skills-used">
+            <div class="skill">
+              HTML
+            </div>
+            <div class="skill">
+              CSS
+            </div>
+            <div class="skill">
+              JavaScript
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="project vamos-project" data-aos="fade-up">
         <div class="project-images">
           <div class="project-picture">
