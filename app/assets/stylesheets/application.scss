@@ -301,6 +301,22 @@ a {
         }
       }
     }
+    &.music-project {
+      .project-images {
+        background-color: gray;
+      }
+      .project-logo {
+        top: 50px;
+        left: 50px;
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      .skill {
+        color: gray;
+      }
+    }
     &.vamos-project {
       .project-images {
         background-color: orange;
